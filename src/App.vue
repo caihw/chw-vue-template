@@ -7,8 +7,15 @@
     <router-view />
   </div>
 </template>
-
-<style>
+{{#if sass}}
+<style lang="sass">
+{{/if}}
+{{#if less}}
+<style lang="less">
+{{/if}}
+{{#if stylus}}
+<style lang="stylus">
+{{/if}}
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
@@ -18,7 +25,7 @@
 }
 
 #nav {
-  padding: 30px;
+  padding: 25px;
 
 }
 
